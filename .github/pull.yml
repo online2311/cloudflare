@@ -1,5 +1,8 @@
 version: "1"
 rules:
   - base: master
+    upstream: ip-scanner:master
+    mergeMethod: hardreset
+  - base: daily
     upstream: ip-scanner:daily
     mergeMethod: hardreset
